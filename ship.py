@@ -7,10 +7,8 @@ class Ship:
         self.settings = ai_game.settings
 
         # Ship icon from good ware
-        self.image = pygame.image.load('images/ship.bmp')
-        self.image.set_colorkey((230, 230, 230))
-        self.image = pygame.transform.rotozoom(self.image, 0, 3)
-
+        self.image = pygame.image.load('images/ship.png')
+        self.image = pygame.transform.rotozoom(self.image, 0, .2)
         self.rect = self.image.get_rect()
         self.rect.midbottom = self.screen_rect.midbottom
 
